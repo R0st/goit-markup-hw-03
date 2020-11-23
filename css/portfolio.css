@@ -1,0 +1,134 @@
+/* основной цвет, заголовки  #212121 */
+/* вторичный цвет, абзацы #757575 */
+/* цвет ссылки при наведении, акцент  #2196F3 */
+/* футер-почта-номер  rgba(255, 255, 255, 0.6) */
+/* футер-адрес #FFFFFF*/
+/* фон бекграунд #2F303A */
+/* цвет фона блока наша команда #F5F4FA */
+
+
+:root {
+    --title-text-color:  #212121;
+    --primary-text-color: #757575;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --footer-color: rgba(255, 255, 255, 0.6);
+  
+  }
+
+  body {
+    font-family: Roboto,sans-serif;
+    color: var(--primary-text-color);
+    background-color: #E5E5E5;
+    /* background-color: #fff; */
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+  } 
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* title */
+.title {
+    color: var(--title-text-color);
+  }
+  
+  /* ссылки */
+  a:hover,
+  a:focus {
+    color: var(--accent-color);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--title-text-color);
+  }
+  /* logo */
+  a .logo {
+    color: var(--accent-color);
+  }
+  .logo-secondary {
+    color: var(--white-color);
+  } 
+  
+  a > p {
+    font-family: Raleway,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;  
+  }
+  
+  /* header */
+  .header {
+    background-color: #fff;
+  }
+  
+  /* footer */
+  .footer {
+    background-color: #2F303A;
+  }
+  
+  .footer .link {
+    color: var(--footer-color);
+  }
+
+  .footer .link:hover,
+  .footer .link:focus {
+    color: var(--accent-color);
+  }
+
+  /* button */
+ .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.03em;
+  }
+
+  .button:hover,
+  .button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+ 
+  /* navigation */
+  .site-nav:hover,
+  .site-nav:focus {
+    color: var(--accent-color);
+    
+  }
+ 
+  .site-nav .link {
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+  }
+  
+  .auth-nav .link {
+   color: var(--primary-text-color);
+  }
+  
+  .auth-nav .link:hover,
+  .auth-nav .link:focus {
+   color: var(--accent-color);
+  }
+
+  /* projects */
+.projects .title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects .portfolio-jobs {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+    
