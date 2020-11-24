@@ -42,6 +42,14 @@ ul {
   color: var(--title-text-color);
 }
 
+/* container */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+}
+
 /* ссылки */
 a:hover,
 a:focus {
@@ -61,6 +69,11 @@ a {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;  
+}
+
+.header-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .logo-secondary {
   color: var(--white-color);
@@ -103,13 +116,6 @@ nav > a {
  .auth-nav .link:focus {
   color: var(--accent-color);
  }
-/* container */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
-}
 
  /* hero */
  .hero-page {
