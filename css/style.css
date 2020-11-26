@@ -24,7 +24,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-style: normal;
-  width: 1600px;
+  /* width: 1600px; */
 } 
 
 * {
@@ -37,6 +37,16 @@ ul {
   list-style-type: none;
 }
 
+li {
+  display: list-item;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /* title */
 .title {
   color: var(--title-text-color);
@@ -44,7 +54,7 @@ ul {
 
 /* container */
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 94px;
@@ -74,6 +84,7 @@ a {
 .header-logo {
   margin-top: 24px;
   margin-bottom: 25px;
+  margin-right: 93px;
 }
 .logo-secondary {
   color: var(--white-color);
@@ -85,12 +96,18 @@ a {
 }
 
 /* navigation */
-nav > a {
-  display: inline-block;
-  width: 145px;
-  height: 31px;
-  margin: 24px 1240px 25px 215px;
+.main-nav {
+  display: flex;
+  align-items: center;
 }
+
+.site-nav {
+  display: flex;
+}
+
+/* .site-nav .item+.item {
+  margin-left: 50px;
+} */
 
  .site-nav:hover,
  .site-nav:focus {
@@ -99,18 +116,27 @@ nav > a {
  }
 .site-nav .link,
 .auth-nav .link {
- /* .site-nav .link { */
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: inline-block;
-  margin-right: 50px;
-  margin-bottom: 32px;
  }
 
+ .item {
+  margin-right: 50px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+ .auth-nav {
+   display: flex;
+   margin-left: auto;
+ }
  .auth-nav .link {
   color: var(--primary-text-color);
- }
+  /* margin-right: 50px; */
+}
  
  .auth-nav .link:hover,
  .auth-nav .link:focus {
@@ -166,6 +192,24 @@ nav > a {
     line-height: 1.16;
     letter-spacing: 0.03em;
  }
+ .pictures {
+   display: flex;
+ }
+ .pictures  img {
+    margin-right: 30px;
+ } 
+  .pictures img:last-child {
+     margin-right: 0;
+ }
+
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jobs > .item {
+  margin-right: 30px;
+}
 
  .jobs .title {
   font-weight: bold;
@@ -187,11 +231,7 @@ nav > a {
    text-align: center;  
    margin-bottom: 50px;
  }
- /* .container.jobs-img > img {
-   padding: 0;
-   margin: 0;
-   margin-right: 30px; */
- }
+ 
  /* наша команда */
  .team .name {
   font-weight: 500;
@@ -199,24 +239,21 @@ nav > a {
   line-height: 1.18;
   letter-spacing: 0.03em;
  }
-
- .team {
-   background-color: ##F5F4FA;
- }
+.team-list {
+  margin-right: 30px;
+  text-align: center;
+}
+.team-list:last-child {
+  margin-right: 0;
+}
  
   .workers > img {
    margin-bottom: 30px;
  }
- /* отступ списка каждого участника нашей команды */
- .team-list {
-   padding-bottom: 30px;
- }
- 
 
- /* our-jobs */
- .our-jobs {
-  background-color: #E5E5E5;
- }
+.workers-prof {
+  margin-bottom: 30px;
+}
 
  /* footer */
 .footer {
