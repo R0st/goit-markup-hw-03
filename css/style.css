@@ -14,6 +14,7 @@
   --accent-color: #2196F3;
   --white-color: #FFFFFF;
   --footer-color: rgba(255, 255, 255, 0.6);
+  --main-bcg: #2F303A; 
 
 }
 
@@ -56,7 +57,8 @@ li {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ссылки */
@@ -81,8 +83,6 @@ a {
 }
 
 .header-logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
   margin-right: 93px;
 }
 .logo-secondary {
@@ -123,6 +123,8 @@ a {
 
  .item {
   margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .item:last-child {
@@ -144,8 +146,9 @@ a {
 
  /* hero */
  .hero-page {
-   background-color: #2F303A; 
+   background-color: var(--main-bcg); 
    text-align: center;
+   margin-bottom: 94px;
  }
 
  .hero {
@@ -161,23 +164,34 @@ a {
 
 
  /* button */
- .button {
+ .btn-hero {
    color: var(--white-color);
    background-color: var(--accent-color);
+   border-radius: 4px;
+   border: 1px solid transparent;
+   width: 200px;
+   margin-bottom: 200px;
+   height: 50px;
+   display: inline-block;
+   box-sizing: border-box;
+ }
+ .text-hero {
+   min-width: 136px;
+   min-height: 30px;
    font-size: 16px;
    font-weight: 700;
    line-height: 1.19;
    letter-spacing: 0.06em;
-   border-radius: 4px;
    padding: 10px 32px;
-   display: inline-block;
-   min-width: 200px;
-   margin-bottom: 200px;
+   display: flex;
+   align-items: center;
+   position: absolute;
  }
- .button:hover,
- .button:focus {
+
+ .btn-hero:hover,
+ .btn-hero:focus {
   color: var(--white-color);
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
  }
  
 /* скрытый заголовок */
@@ -186,6 +200,9 @@ a {
 }
 
  /* наши работы */
+ .our-jobs {
+   margin-bottom: 188px;
+ }
  .jobs-img .title,
  .team > h2 {
     font-weight: bold;
@@ -193,6 +210,7 @@ a {
     line-height: 1.16;
     letter-spacing: 0.03em;
  }
+
  .pictures {
    display: flex;
  }
@@ -205,26 +223,33 @@ a {
  }
 
 
-.jobs {
+.features {
   display: flex;
   flex-wrap: wrap;
 }
-.jobs > .item {
+.features > .item {
   margin-right: 30px;
 }
 
- .jobs .title {
+ .features .title {
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
  }
 
- .jobs p {
+ .features p {
   line-height: 1.71;
   letter-spacing: 0.03em;
  }
-
+ .features-list {
+   margin-right: 30px;
+   margin-bottom: 94px;
+   width: 270px;
+ }
+ .features-list:last-child {
+   margin-right: 0;
+ }
  .title.works {
     margin-bottom: 10px;
  }
@@ -259,8 +284,9 @@ a {
 }
 
  /* footer */
-.footer {
-  background-color: #2F303A;
+ .footer {
+  background-color: var(--main-bcg);
+    
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -279,8 +305,8 @@ a {
 .footer .link:focus {
   color: var(--accent-color);
 }
-.footer.container {
+.logo-footer.container {
   padding-top: 60px;
   padding-bottom: 0;
-}
 
+}

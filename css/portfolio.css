@@ -13,6 +13,8 @@
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --footer-color: rgba(255, 255, 255, 0.6);
+    --portfolio-item: #EEEEEE;
+    --main-bcg: #2F303A; 
   
   }
 
@@ -51,7 +53,8 @@
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
   /* ссылки */
@@ -88,6 +91,7 @@
   /* header */
   .header {
     background-color: #fff;
+    margin-bottom: 94px;
   }
 
   /* navigation */
@@ -117,6 +121,8 @@
  }
 .item {
   margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .item:last-child {
   margin-right: 0;
@@ -135,21 +141,26 @@
  }
 
   /* button  кнопки*/
- .button {
-   display: inline-flex;
+ .btn {
+   display: inline-block;
     font-weight: 500;
     font-size: 16px;
     line-height: 162%;
     letter-spacing: 0.03em;
     padding: 6px 22px;
-    margin-bottom: 50px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    min-width: 73px;
+  }
+  .buttons-list:not(:last-child) {
+    margin-right: 8px;
   }
 
-  .button:hover,
-  .button:focus {
+  .btn:hover,
+  .btn:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
-    border-radius: 4px;
+    outline: none;
   }
  
   /* скрытый заголовок */
@@ -159,9 +170,12 @@
  
 /* projects  элементы списка*/
 
-  .elements {
+  .buttons {
     display: flex;
     justify-content: center;
+  }
+  .buttons-list {
+    margin-bottom: 50px;
   }
   .projects img {
     margin-bottom: 20px;
@@ -171,6 +185,17 @@
      display: flex;
      flex-wrap: wrap;
    }
+   .projects-list {
+     margin-right: 30px;
+   }
+   .projects-list:nth-child(3n) {
+     margin-right: 0;
+   }
+   .projects-list .title, 
+   .projects-list .portfolio-jobs {
+     margin-left: 24px;
+   }
+
    /* calc((100% - кол-во маржинов в строке*значение маржина)/кол-во элементов в строке */
    /* .projects .item {
      width: calc((100%-60px) / 3);
@@ -180,15 +205,15 @@
      margin-right: 0;
    } */
 
-   .projects .item {
+   .projects-list {
+     display: block;
      width: 370px;
      margin-right: 30px; 
      margin-bottom: 30px;
+     border: 1px solid var(--portfolio-item);
+     box-sizing: border-box;
     }
-   .projects .item:nth-child(3n) {
-     margin-right: 0;
-   }
-   .projects .item:nth-last-child(-n + 3) {
+   .projects-list:nth-last-child(-n + 3) {
      margin-bottom: 0;
    }
 
@@ -216,9 +241,14 @@
     margin-bottom: 20px;
 }
     
+/* main */
+main {
+  margin-bottom: 94px;
+}
  /* footer */
  .footer {
-  background-color: #2F303A;
+  background-color: var(--main-bcg);
+    
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -237,7 +267,8 @@
 .footer .link:focus {
   color: var(--accent-color);
 }
-.footer.container {
+.logo-footer.container {
   padding-top: 60px;
   padding-bottom: 0;
+
 }
