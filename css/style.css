@@ -291,7 +291,9 @@ a {
 .logo-footer {
   margin-bottom: 20px;
 }
-
+.logo-div {
+  margin-bottom: 20px;
+}
 .footer .link {
   color: var(--footer-color);
 }
@@ -301,6 +303,10 @@ a {
 .footer-p:last-child {
   padding-bottom: 60px;
 }
+.footer-p {
+  color: var(--white-color);
+}
+
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
@@ -308,5 +314,4 @@ a {
 .logo-footer.container {
   padding-top: 60px;
   padding-bottom: 0;
-
 }
