@@ -253,11 +253,11 @@ a {
  .title.works {
     margin-bottom: 10px;
  }
-
  .title.h2 {
    text-align: center;  
    margin-bottom: 50px;
  }
+
  
  /* наша команда */
  .team .name {
@@ -272,16 +272,15 @@ a {
 }
 .team-list:last-child {
   margin-right: 0;
-}
- 
+} 
   .workers > img {
    margin-bottom: 30px;
    display: block;
  }
-
 .workers-prof {
   margin-bottom: 30px;
 }
+
 
  /* footer */
  .footer {
@@ -304,7 +303,6 @@ a {
 .footer-p:last-child {
   padding-bottom: 60px;
 }
-
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
