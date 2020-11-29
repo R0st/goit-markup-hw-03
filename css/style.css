@@ -299,12 +299,10 @@ a {
 }
 .footer-p {
   margin-bottom: 9px;
+  color: var(--white-color);
 }
 .footer-p:last-child {
   padding-bottom: 60px;
-}
-.footer-p {
-  color: var(--white-color);
 }
 
 .footer .link:hover,
